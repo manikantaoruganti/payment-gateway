@@ -1,0 +1,136 @@
+/* Failure Page Styles */
+
+.failure-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  padding: 20px;
+}
+
+.failure-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.failure-icon {
+  width: 60px;
+  height: 60px;
+  background: #f5576c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+}
+
+.failure-card h1 {
+  color: #333;
+  margin: 20px 0 10px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.failure-card .message {
+  color: #666;
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.error-details {
+  background: #fff3f3;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-left: 4px solid #f5576c;
+  text-align: left;
+}
+
+.error-details h3 {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.error-reason {
+  color: #f5576c;
+  font-weight: 500;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.retry-btn {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 15px rgba(245, 87, 108, 0.3);
+}
+
+.retry-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.4);
+}
+
+.home-btn {
+  background: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-btn:hover {
+  background: #d0d0d0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .failure-card {
+    padding: 20px;
+  }
+  
+  .failure-card h1 {
+    font-size: 24px;
+    margin: 15px 0 10px;
+  }
+  
+  .error-details {
+    padding: 15px;
+  }
+  
+  .retry-btn,
+  .home-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+  }
+}
